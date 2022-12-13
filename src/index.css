@@ -36,7 +36,7 @@ body{
   margin: 0 5vw;
 }
 section{
-  padding: 15rem 0;
+  padding: 10rem 0;
 }
 .navbar{
   display: flex;
@@ -52,11 +52,7 @@ section{
 
 }
 
-.links{
-  display: flex;
-  gap: 5rem;
-  
-}
+
 .links a{
   font-weight: 700;
   color: var(--color-dark);
