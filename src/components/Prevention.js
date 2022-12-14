@@ -33,7 +33,7 @@ const Prevention = () => {
         />
       </div>
       <div className="prev-r">
-        <h3 ref={pretextHeader}>Join 100k satisfied students</h3>
+        <h3 ref={pretextHeader}>What can I do now?</h3>
         <ol>
           <li ref={li1}>
           Think before you post on social media

@@ -202,11 +202,9 @@ export const useGsapBlogTextHeader=(item,trig)=>{
       el,
       {
         x: "-100%",
-        y:"-100%"
       },
       {
         x: 0,
-         y:0,
         duration: 2.5,
         ease: Expo.easeInOut,
         scrollTrigger: {

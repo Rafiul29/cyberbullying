@@ -295,14 +295,24 @@ visibility: visible;
 
 .footer{
   text-align: center;
-
+background-color: #0d2933d0;
+padding: 0 5vw;
 }
 .footer h1{
-  font-family: 'Bodoni Moda', serif;
   text-transform: lowercase;
   font-size: 8vw;
   color:var(--color-primary)
 }
 .footer p{
   font-size: 4rem;
+}
+
+.notfound{
+  text-align: center;
+  font-size: 4rem;
+}
+.notfound a{
+  color: var(--color-light);
+  font-size: 4rem;
+  text-decoration: underline;
 }

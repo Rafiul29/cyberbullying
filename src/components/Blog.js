@@ -6,6 +6,8 @@ import {useGsapBlogTextHeader} from '../hooks/gsap'
 const Blog = () => {
     const blogRef=useRef(null)
     const blogTitleRef=useRef(null)
+    const blogItemRef=useRef(null)
+    
 
     useGsapBlogTextHeader(blogTitleRef,blogRef)
 
