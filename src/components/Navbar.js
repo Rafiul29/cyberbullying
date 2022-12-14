@@ -22,17 +22,16 @@ const Navbar = () => {
 
   return (
     <nav className="navbar wrapper">
-
       <ul className="links">
        
           <li ref={li1}>
-            <Link to='/'>Problems</Link>
+            <Link to='/about'>Problems</Link>
           </li>
           <li ref={li2}>
             <Link to='/'>Prevention</Link>
           </li>
-      
         </ul>
+
         <div className="logo" ref={logoRef}>
           <Link to="/">
           <h2>CyberBullying</h2>
@@ -40,11 +39,8 @@ const Navbar = () => {
         </div>
 
         <div className="blog" ref={blogRef}>
-     
-            <Link to='/'>Blog</Link>
-          
+            <Link to='/blog'>Blog</Link>
         </div>
-
     </nav>
   );
 };
