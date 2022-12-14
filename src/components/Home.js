@@ -1,5 +1,5 @@
 import React from 'react'
-import About from './Problem'
+import About from './Problems'
 import Blog from './Blog'
 import Hero from './Hero'
 import Prevention from './Prevention'

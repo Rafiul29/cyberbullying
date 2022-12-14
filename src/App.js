@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Problem from "./components/Problem";
+import Problems from "./components/Problems";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -16,7 +16,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/problems" element={<Problem/>}/>
+        <Route path="/problems" element={<Problems/>}/>
         <Route path="/prevention" element={<Prevention/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="*" element={<NotFoundPage/>}/>

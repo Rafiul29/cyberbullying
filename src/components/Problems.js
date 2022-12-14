@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import {useGsapProblemContent,useGsapProblemFirstImageUnveil,useGsapProblemSceondImageUnveil} from "../hooks/gsap"
 
 
-const Problem = () => {
+const Problems = () => {
   const problemHeaderRef=useRef(null)
   const problemFirstImageShutterRef=useRef(null)
   const problemFirstTitleRef=useRef(null)
@@ -58,4 +58,4 @@ const Problem = () => {
   );
 };
 
-export default Problem;
+export default Problems;
