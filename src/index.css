@@ -296,7 +296,7 @@ visibility: visible;
 .footer{
   text-align: center;
 background-color: #0d2933d0;
-padding: 0 5vw;
+padding: 10vh 5vw;
 }
 .footer h1{
   text-transform: lowercase;
