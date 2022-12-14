@@ -15,6 +15,7 @@ const About = () => {
   useGsapAboutContent(aboutSceondTitleRef)
   useGsapAboutFirstImageUnveil(aboutFirstImageShutterRef,aboutRef)
   useGsapAboutSceondImageUnveil(aboutSceondImageShutterRef,aboutRef)
+  
   return (
     <section className="wrapper about" ref={aboutRef}>
       <h2 className="about-header" ref={aboutHeaderRef}>Problems</h2>

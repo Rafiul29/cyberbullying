@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 const BlogItem = ({item}) => {
+
+  const blogItemRef=useRef(null);
+  const blogArr=[blogItemRef]
+  console.log(blogArr)
+
   return (
-    <div className='blog-item'>
+    <div className='blog-item' ref={blogItemRef}>
       <img src={item.image} alt={item.title} />
       <div className='blog-text'>
       <h2>{item.title}</h2>

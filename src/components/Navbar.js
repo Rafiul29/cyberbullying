@@ -23,12 +23,11 @@ const Navbar = () => {
   return (
     <nav className="navbar wrapper">
       <ul className="links">
-       
           <li ref={li1}>
             <Link to='/about'>Problems</Link>
           </li>
           <li ref={li2}>
-            <Link to='/'>Prevention</Link>
+            <Link to='/prevention'>Prevention</Link>
           </li>
         </ul>
 

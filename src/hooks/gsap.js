@@ -19,7 +19,7 @@ export const  useGsapNavDownStagger=(arr,delay)=>{
       case:Expo.easeIn,
       delay:delay
     })
-    })
+    },[])
 }
 
 export const  useGsapHeroContentStagger=(arr)=>{
@@ -28,11 +28,11 @@ export const  useGsapHeroContentStagger=(arr)=>{
 
     gsap.fromTo(el,
       {
-          y:"-40%",
+          x:"-60%",
           opacity:0
       },
       {
-        y:0,
+        x:0,
         opacity:1,
         stagger:0.2,
         duration:2.2,
@@ -88,16 +88,15 @@ export const useGsapAboutContent=(item,Xfrom="-100vw",Xto=0)=>{
 export const useGsapAboutFirstImageUnveil=(item,trig)=>{
   useEffect(()=>{
     const el=item.current;
-  
     gsap.fromTo(
       el,
       {
-        width:"-100%",
+        height:"100%",
     
       },
       {
-       width:0,
-       duration:1.3,
+       height:0,
+       duration:1.2,
        ease:Expo.easeInOut,
        scrollTrigger:{
         trigger:trig.current,
@@ -120,7 +119,7 @@ export const useGsapAboutFirstImageUnveil=(item,trig)=>{
       },
       {
        width:0,
-       duration:1.3,
+       duration:1.2,
        ease:Expo.easeInOut,
        scrollTrigger:{
         trigger:trig.current,
@@ -132,3 +131,113 @@ export const useGsapAboutFirstImageUnveil=(item,trig)=>{
     )
   },[])
  }
+
+// Prevention
+export const useGsapPreventionHeader=(item)=>{
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "-100%",
+      },
+      {
+        x: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: el,
+          toggleActions: "play",
+        },
+      }
+    );
+  }, []);
+}
+export const useGsapPreventionPhotoLevitate=(arr,trig)=>{
+  useEffect(() => {
+    const el=arr.map(item=>item.current)
+    gsap.fromTo(el,{
+        y:0,
+    },{
+      y:"-35%",
+      ease:Expo.easeInOut,
+      scrollTrigger:{
+        trigger:trig.current,
+        scrub:1,
+        toggleActions:"play reverse play reverse"
+      }
+    })
+   }, []);
+}
+
+export const useGsapPreventionTextStagger=(arr,trig)=>{
+  useEffect(()=>{
+    const el= arr.map(item=>item.current)
+    gsap.fromTo(el,{
+      x:"100%",
+      opacity:0
+    },{
+     x:0,
+      opacity:1,
+      duration:1.5,
+      stagger:0.15,
+      case:Expo.easeIn,
+      scrollTrigger:{
+        trigger:trig.current,
+        toggleActions:"play"
+      },
+      delay:2
+    })
+    },[])
+}
+
+// blog
+
+export const useGsapBlogTextHeader=(item,trig)=>{
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "-100%",
+        y:"-100%"
+      },
+      {
+        x: 0,
+         y:0,
+        duration: 2.5,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: el,
+          toggleActions: "play",
+        },
+  
+      }
+    );
+  }, []);
+    
+}
+
+
+
+// footer
+export const useGsapFooterHeadLine=(item,trig)=>{
+  useEffect(()=>{
+    const el= item.current;
+    gsap.fromTo(el,
+      {
+        y:"-50%"
+      },
+      {
+        y:0,
+        duration:1,
+        scrollTrigger:{
+          trigger:trig.current,
+          toggleActions:"play"
+        }
+
+      })
+  })
+}

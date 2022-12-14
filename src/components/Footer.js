@@ -1,11 +1,14 @@
 import React, { useRef } from 'react'
+import {useGsapFooterHeadLine} from "../hooks/gsap"
 const Footer = () => {
 
- 
+  const footerRef =useRef(null)
+  const footerHeadLineRef=useRef(null);
+useGsapFooterHeadLine(footerHeadLineRef,footerRef)
 
-  return <section className="footer wrapper">
-    <h1>Bonjour</h1>
-    <p> &copy;{new Date().getFullYear()} </p>
+  return <section className="footer wrapper" ref={footerRef}>
+    <h1 ref={footerHeadLineRef}>Say No To Cyber Bullying!</h1>
+    <p> &copy;{new Date().getFullYear()}  </p>
   </section>
 }
 

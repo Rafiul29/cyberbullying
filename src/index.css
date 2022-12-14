@@ -41,6 +41,7 @@ body{
 
 ::-webkit-scrollbar {
   width: 10px;
+  
 }
 
 
@@ -48,11 +49,9 @@ body{
   background-color: #f1f1f1;
 
 }
-
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   background:var(--color-primary)
@@ -153,12 +152,13 @@ font-size: 5rem;
 .about{
  display: flex;
  flex-direction: column;
- gap: 10rem;
+ gap: 12rem;
 }
 .about-first{
   display: grid;
   grid-template-columns: 40% 50%;
-  gap:10%
+  gap:10%;
+  margin-bottom: 10re;
 }
 .about-second{
   display: grid;
@@ -183,8 +183,6 @@ gap: 2.5rem;
   font-size: 4rem;
   line-height: 2rem;
   margin-bottom: 2rem;
-
-
 }
 .about-first-r p,
 .about-second-l p
@@ -201,28 +199,36 @@ gap: 2.5rem;
 .about-first-image-shutter, 
 .about-second-image-shutter{
   position: absolute;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
   background-color: var(--color-lighter);
+  /* background-color: #a5d867; */
 }
 
 /* preventation */
 .preventation{
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.prevention-heading{
+
+font-size: 4rem;
+}
+.prevention-item{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
-  width: 80%;
-  gap: 10rem;
+  gap: 8rem;
   margin: 0 auto;
 
 }
 .prev-l img{
-width: 100%;
+width: 80%;
 }
 .prev-r {
   display: flex;
@@ -284,4 +290,19 @@ font-size: 5rem;
 }
 .blog-item:hover .blog-text{
 visibility: visible;
+}
+
+
+.footer{
+  text-align: center;
+
+}
+.footer h1{
+  font-family: 'Bodoni Moda', serif;
+  text-transform: lowercase;
+  font-size: 8vw;
+  color:var(--color-primary)
+}
+.footer p{
+  font-size: 4rem;
 }
