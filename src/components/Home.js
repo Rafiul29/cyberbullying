@@ -1,7 +1,6 @@
 import React from 'react'
-import About from './About'
+import About from './Problem'
 import Blog from './Blog'
-import Footer from './Footer'
 import Hero from './Hero'
 import Prevention from './Prevention'
 
@@ -11,9 +10,9 @@ const Home = () => {
       <Hero/>
       <About/>
       <Prevention/>
-     <Blog/>
+      <Blog/>
     </div>
   )
 }
 
-export default Home
+export default Home;

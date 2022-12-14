@@ -148,56 +148,56 @@ font-size: 5rem;
   background-color: var(--color-lighter);
 
 }
-/* about section */
-.about{
+/* problem section */
+.problem{
  display: flex;
  flex-direction: column;
  gap: 12rem;
 }
-.about-first{
+.problem-first{
   display: grid;
   grid-template-columns: 40% 50%;
   gap:10%;
   margin-bottom: 10re;
 }
-.about-second{
+.problem-second{
   display: grid;
   grid-template-columns: 50% 40%;
   gap:10%
 }
-.about-first-l img{
+.problem-first-l img{
   width: 100%;
   height: 100%;
 }
-.about-second-r img{
+.problem-second-r img{
   width: 100%;
   height: 100%;
 }
-.about-first-r,
-.about-second-l{
+.problem-first-r,
+.problem-second-l{
 display: flex;
 flex-direction: column;
 gap: 2.5rem;
 }
-.about-title{
+.problem-title{
   font-size: 4rem;
   line-height: 2rem;
   margin-bottom: 2rem;
 }
-.about-first-r p,
-.about-second-l p
+.problem-first-r p,
+.problem-second-l p
 {
   text-align: left;
   font-size: 2.5rem;
   word-spacing: 0.5rem;
   text-align: justify;
 }
-.about-first-l,
-.about-second-r{
+.problem-first-l,
+.problem-second-r{
   position: relative;
 }
-.about-first-image-shutter, 
-.about-second-image-shutter{
+.problem-first-image-shutter, 
+.problem-second-image-shutter{
   position: absolute;
   top: 0;
   left: 0;

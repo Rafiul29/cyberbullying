@@ -63,7 +63,7 @@ export const useGsapHeroImageUnveil=(item,fromX=0,toX=0,opacityFrom=0,opacitTo=0
   },[])
 }
 
-export const useGsapAboutContent=(item,Xfrom="-100vw",Xto=0)=>{
+export const useGsapProblemContent=(item,Xfrom="-100vw",Xto=0)=>{
   useEffect(() => {
     const el = item.current;
 
@@ -85,7 +85,7 @@ export const useGsapAboutContent=(item,Xfrom="-100vw",Xto=0)=>{
   }, []);
 }
 
-export const useGsapAboutFirstImageUnveil=(item,trig)=>{
+export const useGsapProblemFirstImageUnveil=(item,trig)=>{
   useEffect(()=>{
     const el=item.current;
     gsap.fromTo(
@@ -108,7 +108,7 @@ export const useGsapAboutFirstImageUnveil=(item,trig)=>{
     )
   },[])
 }
- export const useGsapAboutSceondImageUnveil=(item,trig)=>{
+ export const useGsapProblemSceondImageUnveil=(item,trig)=>{
   useEffect(()=>{
     const el=item.current;
     gsap.fromTo(

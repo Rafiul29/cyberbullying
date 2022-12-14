@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="navbar wrapper">
       <ul className="links">
           <li ref={li1}>
-            <Link to='/about'>Problems</Link>
+            <Link to='/problems'>Problems</Link>
           </li>
           <li ref={li2}>
             <Link to='/prevention'>Prevention</Link>
