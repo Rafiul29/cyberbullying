@@ -1,4 +1,6 @@
 import React from 'react'
+import About from './About'
+import Footer from './Footer'
 import Hero from './Hero'
 
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
   return (
     <div>
       <Hero/>
+      <About/>
+      <Footer/>
     </div>
   )
 }

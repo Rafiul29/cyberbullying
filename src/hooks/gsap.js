@@ -1,6 +1,9 @@
-import { useEffect } from "react"
-import gsap,{Expo} from "gsap";
 
+import { useEffect } from "react";
+import gsap, { Expo } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const  useGsapNavDownStagger=(arr,delay)=>{
   useEffect(()=>{
@@ -59,3 +62,72 @@ export const useGsapHeroImageUnveil=(item,fromX=0,toX=0,opacityFrom=0,opacitTo=0
       )
   },[])
 }
+
+export const useGsapAboutContent=(item,Xfrom="-100vw",Xto=0)=>{
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: Xfrom,
+      },
+      {
+        x: Xto,
+        duration: 1.5,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: el,
+          toggleActions: "play",
+        },
+      }
+    );
+  }, []);
+}
+
+export const useGsapAboutFirstImageUnveil=(item,trig)=>{
+  useEffect(()=>{
+    const el=item.current;
+    gsap.fromTo(
+      el,
+      {
+        height:"100vw",
+    
+      },
+      {
+       height:0,
+       duration:1.3,
+       ease:Expo.easeInOut,
+       scrollTrigger:{
+        trigger:trig.current,
+        start:"top cemter",
+        end:"bottom center",
+        toggleActions:"play reverse play reverse"
+       }
+      }
+    )
+  },[])
+}
+ export const useGsapAboutSceondImageUnveil=(item,trig)=>{
+  useEffect(()=>{
+    const el=item.current;
+    gsap.fromTo(
+      el,
+      {
+        width:"100%",
+    
+      },
+      {
+       width:0,
+       duration:1.3,
+       ease:Expo.easeInOut,
+       scrollTrigger:{
+        trigger:trig.current,
+        start:"top cemter",
+        end:"bottom center",
+        toggleActions:"play reverse play reverse"
+       }
+      }
+    )
+  },[])
+ }

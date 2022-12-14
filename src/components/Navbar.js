@@ -4,34 +4,32 @@ import {useGsapNavDownStagger} from "../hooks/gsap"
 const Navbar = () => {
   const li1=useRef(null);
   const li2=useRef(null);
-  const li3=useRef(null);
+ 
 
   const logoRef=useRef(null);
-  const searchRef=useRef(null);
+  const blogRef=useRef(null);
 
 
-  const liArr=[li1,li2,li3]
+  const liArr=[li1,li2]
   const logoArr=[logoRef]
-  const searchArr=[searchRef]
+  const blogArr=[blogRef]
 
-  
+  // style={{marginLeft:"4rem"}} 
 
   useGsapNavDownStagger(liArr,0.8);
   useGsapNavDownStagger(logoArr,1.1);
-  useGsapNavDownStagger(searchArr,1.6);
+  useGsapNavDownStagger(blogArr,1.6);
 
   return (
     <nav className="navbar wrapper">
 
       <ul className="links">
-          <li ref={li1} >
-            <Link to='/causes'>Causes</Link>
+       
+          <li ref={li1}>
+            <Link to='/'>Problems</Link>
           </li>
-          <li style={{marginLeft:"2rem"}} ref={li2}>
-            <Link to='/effect'>Effect</Link>
-          </li>
-          <li style={{marginLeft:"4rem"}} ref={li3}>
-            <Link to='/help'>Get Help Now</Link>
+          <li ref={li2}>
+            <Link to='/'>Prevention</Link>
           </li>
       
         </ul>
@@ -41,11 +39,11 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul className="links">
-          <li ref={searchRef}>
-            <Link to='/causes'>Causes</Link>
-          </li>
-        </ul>
+        <div className="blog" ref={blogRef}>
+     
+            <Link to='/'>Blog</Link>
+          
+        </div>
 
     </nav>
   );
