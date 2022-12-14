@@ -86,27 +86,28 @@ export const useGsapAboutContent=(item,Xfrom="-100vw",Xto=0)=>{
 }
 
 export const useGsapAboutFirstImageUnveil=(item,trig)=>{
-  // useEffect(()=>{
-  //   const el=item.current;
-  //   gsap.fromTo(
-  //     el,
-  //     {
-  //       height:"100vw",
+  useEffect(()=>{
+    const el=item.current;
+  
+    gsap.fromTo(
+      el,
+      {
+        width:"-100%",
     
-  //     },
-  //     {
-  //      height:0,
-  //      duration:1.3,
-  //      ease:Expo.easeInOut,
-  //      scrollTrigger:{
-  //       trigger:trig.current,
-  //       start:"top cemter",
-  //       end:"bottom center",
-  //       toggleActions:"play reverse play reverse"
-  //      }
-  //     }
-  //   )
-  // },[])
+      },
+      {
+       width:0,
+       duration:1.3,
+       ease:Expo.easeInOut,
+       scrollTrigger:{
+        trigger:trig.current,
+        start:"top cemter",
+        end:"bottom center",
+        toggleActions:"play reverse play reverse"
+       }
+      }
+    )
+  },[])
 }
  export const useGsapAboutSceondImageUnveil=(item,trig)=>{
   useEffect(()=>{

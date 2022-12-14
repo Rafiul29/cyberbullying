@@ -23,7 +23,7 @@
 }
 html,body{
   overflow-x: hidden;
-  overflow-y: hidden;
+
 }
 html{
   font-size: 62.5%;
@@ -39,6 +39,26 @@ body{
   color: var(--color-darker);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background:var(--color-primary)
+}
+ 
+  
 .wrapper{
   margin: 0 5vw;
 }
@@ -49,25 +69,29 @@ img{
   border-radius: 2rem;
 }
 .navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
   padding: 2rem 0;
   font-size: 1.5rem;
   text-transform: capitalize;
+  
 
 }
 .logo a{
   color: var(--color-darker);
   font-family: "Syncopate", sans-serif;
   font-size: 2.5rem;
+  text-align: center;
 
 }
 .links{
   display: flex;
   gap: 4rem
 }
-
+.blog{
+  text-align: right;
+}
 .links a,
 .blog a
 {
@@ -185,6 +209,35 @@ gap: 2.5rem;
   right: 0;
   left: 0;
   background-color: var(--color-lighter);
+}
+
+/* preventation */
+.preventation{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  width: 80%;
+  gap: 10rem;
+  margin: 0 auto;
+
+}
+.prev-l img{
+width: 100%;
+}
+.prev-r {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.prev-r h3{
+  font-size: 5rem;
+}
+
+.prev-r ol{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2.5rem;
 }
 
 

@@ -24,7 +24,7 @@ const About = () => {
             src="https://images.thedailystar.net/sites/default/files/feature/images/2021/04/08/women.jpg"
             alt="about-first-image"
           />
-          <span className="about-first-image-shutter"   ref={aboutFirstImageShutterRef}></span>
+          <span className="about-first-image-shutter" ref={aboutFirstImageShutterRef}></span>
         </div>
         <div className="about-first-r">
           <h3 className="about-title" ref={aboutFirstTitleRef}>Women faces what prblems?</h3>

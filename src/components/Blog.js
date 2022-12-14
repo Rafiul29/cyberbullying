@@ -5,8 +5,6 @@ import BlogItem from './BlogItem'
 
 const Blog = () => {
 
-  console.log(blogArr)
-
   return <section className="blog wrapper">
   <h2 className="section-title">Type of cyberbullying</h2>
   <div className='blog-items'>
