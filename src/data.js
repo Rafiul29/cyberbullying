@@ -2,7 +2,7 @@ const arr=[
   {
     id:1,
     title:"The Rising Threat of Cyberbullying Amid COVID-19",
-    img:"https://facingtoday.facinghistory.org/hs-fs/hubfs/Cyberbullying_Large2.jpg?width=747&name=Cyberbullying_Large2.jpg",
+    img:"https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1600",
     describe:"Bullying remains one of the most intractable interpersonal problems facing young Americans across geographic, racial, and economic divides."
   },
   {

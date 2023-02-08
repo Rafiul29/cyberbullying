@@ -3,44 +3,44 @@ export const blogArr=[
     id:1,
     title:"Exclusion",
     description:"Exclusion is the act of leaving someone out deliberately. Exclusion exists with in-person bullying situations, but is also used online to target and bully a victim.",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/04/Photo-by-Katerina-Holmes-from-Pexels.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1600"
   },
   {
     id:2,
     title:"Harassment",
     description:"Harassment is a broad category under which many types of cyberbullying fall into, but it generally refers to a sustained and constant pattern of hurtful or threatening.",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/06/Two-Teenagers-On-Their-Cell-Phones.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://media.istockphoto.com/id/1158225795/photo/unhappy-woman-at-home-with-computer-being-bullied-online-on-social-media.jpg?s=612x612&w=0&k=20&c=5XO9HGivPVvQbtOBr_tXB9_vx1M_o3-Yng3jpu3fgYk="
   },
   {
     id:3,
     title:"Outing/Doxing",
     description:"Outing, also known as doxing, refers to the act of openly revealing sensitive or personal information about someone without their consent for purposes of embarrassing or humiliating them.",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/07/Child-With-Ad-On-Screen.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://st2.depositphotos.com/3508093/9238/i/450/depositphotos_92388588-stock-photo-teenage-girl-victim-of-bullying.jpg"
   }
   ,
   {
     id:4,
     title:"Trickery",
     description:"Trickery is similar to outing, with an added element of deception. In these situations, the bully will befriend their target and lull them into a false sense of security. ",
-    image:"https://i0.wp.com/blog.securly.com/wp-content/uploads/2018/10/resized_1200x628-1.png?resize=676%2C354&ssl=1"
+    image:"https://images.pexels.com/photos/8107833/pexels-photo-8107833.jpeg?auto=compress&cs=tinysrgb&w=1600"
   },
   {
     id:5,
     title:"Cyberstalking",
     description:"Cyberstalking is a particularly serious form of cyberbullying that can extend to threats of physical harm to the child being targeted. It can include monitoring, false accusation. ",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/02/Hands-Holding-A-Phone-With-TikTok-App-1.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://images.pexels.com/photos/6936020/pexels-photo-6936020.jpeg?auto=compress&cs=tinysrgb&w=1600"
   },
   {
     id:6,
     title:"Fraping",
     description:"Fraping is when a bully uses your child’s social networking accounts to post inappropriate content with their name. It can be harmless when friends write funny posts on each other’s profiles.",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/03/Photo-by-Pixabay-from-pexels.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://images.pexels.com/photos/7915432/pexels-photo-7915432.jpeg?auto=compress&cs=tinysrgb&w=1600"
   }
   ,{
     id:7,
     title:"Masquerading",
     description:"Masquerading happens when a bully creates a made up profile or identity online with the sole purpose of cyberbullying someone. This could involve creating a fake email account.",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/05/A-Woman-Sitting-On-Her-Phone.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://st4.depositphotos.com/13324256/29053/i/450/depositphotos_290536000-stock-photo-selective-focus-victim-cyberbullying-showing.jpg"
   },
   ,{
     id:8,
@@ -52,7 +52,7 @@ export const blogArr=[
     id:9,
     title:"Trolling",
     description:"Trolling is when a bully will seek out to intentionally upset others by posting inflammatory comments online. Trolling may not always be a form of cyberbullying",
-    image:"https://static1.momsimage.com/wordpress/wp-content/uploads/2021/06/A-Cell-Phone-With-The-Facebook-Icon-On-It.jpg?q=50&fit=crop&w=943&dpr=1.5"
+    image:"https://st.depositphotos.com/1301499/2205/i/450/depositphotos_22058219-stock-photo-teenage-girl-on-laptop.jpg"
   },
   ,{
     id:10,
