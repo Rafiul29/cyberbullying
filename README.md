@@ -1,8 +1,8 @@
 # cyberbullying
 This is a user-friendly React application designed to prevent cyberbullying, with animations implemented using GSAP.
 
-## The application also includes the following features:
--
+## Features
+-Styling using Tailwind CSS
 
 ## Tools Used
 - React for frontend development
