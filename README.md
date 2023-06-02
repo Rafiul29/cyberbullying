@@ -1,5 +1,6 @@
 # cyberbullying
 This is a user-friendly React application designed to prevent cyberbullying, with animations implemented using GSAP.
+The Cyberbullying Detection and Prevention Project is aimed at developing an intelligent system that can detect and prevent instances of cyberbullying on various online platforms. Cyberbullying has become a serious issue affecting individuals, especially children and teenagers, causing emotional distress and potential harm. This project leverages machine learning and natural language processing techniques to identify and mitigate cyberbullying incidents, thereby fostering a safer online environment.
 
 ## Features
 - Styling using Tailwind CSS
