@@ -21,3 +21,6 @@ The Cyberbullying Detection and Prevention Project is aimed at developing an int
 ## Links
 - [Live Demo](https://rafiul-cyberbullying.netlify.app/)
 - [Front-End Repository](https://github.com/Rafiul29/cyberbullying.git)
+
+## Acknowledgments
+- We would like to express our gratitude to the open-source community for providing valuable resources, libraries, and frameworks that have been instrumental in the development of this project.
